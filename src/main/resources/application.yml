@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: wanted-preonboarding-challenge-backend-20
+
+  datasource:
+    url: jdbc:h2:mem:marketDB
+    user: sa
+    password:
+    driver-class-name: org.h2.Driver
+
+  jpa:
+    hibernate.ddl-auto: create
+    show_sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        use_sql_comment: true
+

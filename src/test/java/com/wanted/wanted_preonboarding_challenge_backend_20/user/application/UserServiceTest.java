@@ -64,7 +64,7 @@ class UserServiceTest {
         );
         assertThatIllegalArgumentException().isThrownBy(
                 () -> userService.join(duplicateJoinDto)
-        ).withFailMessage("이미 가입된 이메일이 존재합니다.");
+        ).withMessage("이미 가입된 이메일이 존재합니다.");
     }
 
     @Test
@@ -80,7 +80,7 @@ class UserServiceTest {
         // when & then
         assertThatIllegalArgumentException().isThrownBy(
                 () -> userService.join(joinRequestDto)
-        ).withFailMessage("비밀번호가 일치하지 않습니다.");
+        ).withMessage("비밀번호가 일치하지 않습니다.");
 
     }
 }
